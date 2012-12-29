@@ -1,0 +1,123 @@
+﻿@charset "utf-8";
+/*																	   初期化 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+ 
+:focus {
+	outline: 0;
+}
+ 
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+ 
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 																  コンテンツ  */
+body {
+	width: 1000px;
+	margin: 0 auto;
+	color: #333333;
+	font: "ＭＳ Ｐ ゴシック", "ＭＳ ゴシック";
+border:solid 1px #000000;
+}
+
+.t_logo {
+	position: relative;
+	z-index: 0;
+	top: 10px;
+	left: 10px;
+}
+
+.t_button {
+	margin-right: 10px;
+	float: right;
+}
+.t_cart {
+	float: left;
+}
+.t_login {
+	float: left;
+}
+.t_quickjoin {
+	float: left;
+}
+
+.contents .page_img {
+	margin-top: 30px;
+	float: left;
+}
+
+.contents .main {
+	margin-top: 30px;
+	width: 600px;
+	float: left;
+	background-color: #F5F5E1;
+border:solid 1px #000000;
+}
+
+.contents .nav {
+	margin-top: 200px;
+	margin-right: 90px;
+	float: right;
+}
+
+.contents .nav ul li {
+	width: 100px;
+	height: 51px;
+	margin: 0;
+}
+
+.footer {
+	clear: both;
+}
+
+.footer_img {
+	width: 986px;
+	height: 100px;
+	background: url("../images/footer.png") no-repeat;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+
+.footer_img p {
+	font-size: 12px;
+	text-align: center;
+	padding-top: 45px;
+	font-style: italic;
+}

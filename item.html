@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>craf － 商品一覧 －</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/turn.css" rel="stylesheet" type="text/css" />
+		<link href="css/dd.css" rel="stylesheet" type="text/css" />
+		<link href="css/accordion.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/turn.js"></script>
+		<script type="text/javascript" src="js/introtzikas.js"></script>
+		<script type="text/javascript" src="js/jquery.pageswitch.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	</head>
+
+	<body onload="heightTyosei();">
+										<!-- header start					 -->
+		<div class="header">
+
+			<div class="t_logo">
+				<h1><a href="index.html"><img src="images/logo_other.png"></a></h1>
+			</div>
+
+			<div class="t_button">
+				<div class="t_cart"><a href="cart.html"></a></div>
+				<div class="t_login"><a href="login.html"></a></div>
+				<div class="t_quickjoin"><a href="#"></a></div>
+			</div>
+			<div class="clear_box"></div>
+										<!-- 画面右上エフェクト start		 -->
+			<img id="target" src="images/code.png">
+										<!-- 画面右上エフェクト end			 -->
+		</div>
+										<!-- header end						 -->
+
+										<!-- contents start					 -->
+		<div class="contents">
+
+			<div class="page_img">
+				<img src="images/l_item.png">
+			</div>
+										<!-- main start						 -->
+			<div class="main">
+										<!-- accordion start				 -->
+				<div id="jquery-ui-accordion">
+					<div>
+						<div class="jquery-ui-accordion-title"><img src="images/m_chair.png" onclick="heightTyosei();"></div>
+						<div class="jquery-ui-accordion-contents">
+							<ul id="ProductList">
+								<li id="chair01">
+									<p class="thumb">
+										<img src="images/item/chair/01_01.jpg" width="180" height="180">
+									</p>
+									
+									<h2>
+										<b>イタリア家具　カウチ　ベンチ</b>
+									</h2>
+									<p class="code">型番：<span class="codeNum">CHR-01</span></p>
+									<p class="item_info">イタリア製　猫脚のソファー。</p>
+									<p class="item_detail"><a href="itemdetail.html" name="images/item/chair/01_01.jpg" onclick="setPara(this.name);">商品詳細</a></p>
+									<p class="item_price">¥ 38,500</p>
+								</li>
+
+								<li id="chair02">
+									<p class="thumb">
+										<img src="images/item/chair/02_01.jpg" width="180" height="180">
+									</p>
+									
+									<h2>
+										<b>イタリア産ダイニングチェア</b>
+									</h2>
+									<p class="code">型番：<span class="codeNum">CHR-02</span></p>
+									<p class="item_info">イタリア製　クラシックな猫足のダイニングチェア。</p>
+									<p class="item_detail"><a href="itemdetail.html" name="images/item/chair/02_01.jpg" onclick="setPara(this.name);">商品詳細</a></p>
+									<p class="item_price">¥ 38,500</p>
+
+								</li>
+
+
+								<li id="chair03">
+									<p class="thumb">
+										<img src="images/item/chair/03_01.jpg" width="180" height="180">
+									</p>
+									
+									<h2>
+										<b>オットマン、スツール イス</b>
+									</h2>
+									<p class="code">型番：<span class="codeNum">CHR-03</span></p>
+									<p class="item_info">イタリア製　イタリアの可愛いお姫様家具のチェアー。</p>
+									<p class="item_detail"><a href="itemdetail.html" name="images/item/chair/03_01.jpg" onclick="setPara(this.name);">商品詳細</a></p>
+									<p class="item_price">¥ 1,850</p>
+
+								</li>
+
+
+								<li id="chair04">
+									<p class="thumb">
+
+										<img src="images/item/chair/04_01.jpg" width="180" height="180">
+
+									</p>
+									
+									<h2>
+										<b>オットマン、　スツール イス　サイドスツール</b>
+									</h2>
+									<p class="code">型番：<span class="codeNum">CHR-04</span></p>
+									<p class="item_info">イタリア製　クラシックな猫足のダイニングチェア。</p>
+									<p class="item_detail"><a href="itemdetail.html" name="images/item/chair/04_01.jpg" onclick="setPara(this.name);">商品詳細</a></p>
+									<p class="item_price">¥ 1,850</p>
+
+								</li>
+
+
+								<li id="chair05">
+									<p class="thumb">
+
+										<img src="images/item/chair/05_01.jpg" width="180" height="180">
+
+									</p>
+									
+									<h2>
+										<b>天然石スツール</b>
+									</h2>
+									<p class="code">型番：<span class="codeNum">CHR-05</span></p>
+									<p class="item_info">ホワイトマーブルの上品なスツール。</p>
+									<p class="item_detail"><a href="itemdetail.html" name="images/item/chair/05_01.jpg" onclick="setPara(this.name);">商品詳細</a></p>
+									<p class="item_price">¥ 500,000</p>
+
+								</li>
+								<li id="chair06">
+									<p class="thumb">
+
+										<img src="images/item/chair/06_01.jpg" width="180" height="180">
+
+									</p>
+									
+									<h2>
+										<b>アイアン　チェア</b>
+									</h2>
+									<p class="code">型番：<span class="codeNum">CHR-06</span></p>
+									<p class="item_info">細いラインがシャープな印象の椅子。</p>
+									<p class="item_detail"><a href="itemdetail.html" name="images/item/chair/06_01.jpg" onclick="setPara(this.name);">商品詳細</a></p>
+									<p class="item_price">¥ 64,500</p>
+
+								</li>
+
+							</ul>
+
+						</div>
+					</div>
+
+					<div>
+						<div class="jquery-ui-accordion-title"  onClick="heightTyosei();"><img src="images/m_desk.png" onclick="heightTyosei();"></div>
+						<div class="jquery-ui-accordion-contents">
+
+							<ul id="ProductList">
+								<li id="desk01">
+									<p class="thumb">
+
+										<img src="images/item/desk/01_01.jpg" width="180" height="180">
+
+									</p>
+									
+									<h2>
+										<b>イタリア家具　猫脚　コンソール　パソコンデスク1</b>
+									</h2>
+									<p class="code">型番：<span class="codeNum">DSK-01</span></p>
+									<p class="item_info">猫脚のクラシックタイプのデスク</p>
+									<p class="item_detail"><a href="itemdetail.html" name="images/item/desk/01_01.jpg" onclick="setPara(this.name);">商品詳細</a></p>
+									<p class="item_price">¥ 38,500</p>
+								</li>
+								<li id="desk02">
+									<p class="thumb">
+
+										<img src="images/item/desk/02_01.jpg" width="180" height="180">
+
+									</p>
+									
+									<h2>
+										<b>イタリア家具　猫脚　コンソール　パソコンデスク2</b>
+									</h2>
+									<p class="code">型番：<span class="codeNum">DSK-02</span></p>
+									<p class="item_info">猫脚のクラシックタイプのパソコンデスク</p>
+									<p class="item_detail"><a href="itemdetail.html" name="images/item/desk/02_01.jpg" onclick="setPara(this.name);">商品詳細</a></p>
+									<p class="item_price">¥ 38,500</p>
+
+								</li>
+
+
+								<li id="desk03">
+									<p class="thumb">
+
+										<img src="images/item/desk/03_01.jpg" width="180" height="180">
+
+									</p>
+									
+									<h2>
+										<b>イタリア家具 電話台　ランプテーブル　花台</b>
+									</h2>
+									<p class="code">型番：<span class="codeNum">DSK-03</span></p>
+									<p class="item_info">クラシックなコンソール、スッキリとした猫脚、スタイル抜群</p>
+									<p class="item_detail"><a href="itemdetail.html" name="images/item/desk/03_01.jpg" onclick="setPara(this.name);">商品詳細</a></p>
+									<p class="item_price">¥ 1,850</p>
+
+								</li>
+
+							</ul>
+
+						</div>
+					</div>
+
+					<div>
+						<div class="jquery-ui-accordion-title"><img src="images/m_bed.png" onclick="heightTyosei();"></div>
+						<div class="jquery-ui-accordion-contents">
+
+							<ul id="ProductList">
+								<li id="bed01">
+									<p class="thumb">
+										<img src="images/item/bed/01_01.jpg" width="180" height="180">
+									</p>
+									
+									<h2>
+										<b>イタリア/サルタレッリ社製　フローレンス ベッド</b>
+									</h2>
+									<p class="code">型番：<span class="codeNum">BED-01</span></p>
+									<p class="item_info">サルタレッリ社のフローレンス クィーンベッド</p>
+									<p class="item_detail"><a href="itemdetail.html" name="images/item/bed/01_01.jpg" onclick="setPara(this.name);">商品詳細</a></p>
+									<p class="item_price">¥ 38,500</p>
+								</li>
+
+								<li id="bed02">
+									<p class="thumb">
+										<img src="images/item/bed/02_01.jpg" width="180" height="180">
+									</p>
+									
+									<h2>
+										<b>シカゴ」Ⅱシングルベッド</b>
+									</h2>
+									<p class="code">型番：<span class="codeNum">BED-02</span></p>
+									<p class="item_info">クラッシックスタイル のシングルベッド</p>
+									<p class="item_detail"><a href="itemdetail.html" name="images/item/bed/02_01.jpg" onclick="setPara(this.name);">商品詳細</a></p>
+									<p class="item_price">¥ 38,500</p>
+
+								</li>
+
+
+								<li id="bed03">
+									<p class="thumb">
+										<img src="images/item/bed/03_01.jpg" width="180" height="180">
+									</p>
+									<h2>
+										<b>ＮＶ３５０　ベットフレーム</b>
+									</h2>
+									<p class="code">型番：<span class="codeNum">BED-03</span></p>
+									<p class="item_info">新型キャラバン用のベットフレーム</p>
+									<p class="item_detail"><a href="itemdetail.html" name="images/item/bed/03_01.jpg" onclick="setPara(this.name);">商品詳細</a></p>
+									<p class="item_price">¥ 1,850</p>
+
+								</li>
+
+
+							</ul>
+						</div>
+					</div>
+
+					<div>
+						<div class="jquery-ui-accordion-title"><img src="images/m_dresser.png" onclick="heightTyosei();"></div>
+						<div class="jquery-ui-accordion-contents">
+							<ul id="ProductList">
+								<li id="dresser01">
+									<p class="thumb">
+										<img src="images/item/dresser/01_01.jpg" width="180" height="180">
+									</p>
+									<h2>
+										<b>個性的なインテリアチェスト</b>
+									</h2>
+									<p class="code">型番：<span class="codeNum">DRS-01</span></p>
+									<p class="item_info">存在感があり　個性的なインテリアチェスト</p>
+									<p class="item_detail"><a href="itemdetail.html" name="images/item/dresser/01_01.jpg" onclick="setPara(this.name);">商品詳細</a></p>
+									<p class="item_price">¥ 38,500</p>
+								</li>
+								<li id="dresser02">
+									<p class="thumb">
+										<img src="images/item/dresser/02_01.jpg" width="180" height="180">
+									</p>
+									<h2>
+										<b>イタリア/サルタレッリ社製チェスト</b>
+									</h2>
+									<p class="code">型番：<span class="codeNum">DRS-02</span></p>
+									<p class="item_info">仕上げはつやのある鏡面仕上げ</p>
+									<p class="item_detail"><a href="itemdetail.html" name="images/item/dresser/02_01.jpg" onclick="setPara(this.name);">商品詳細</a></p>
+									<p class="item_price">¥ 38,500</p>
+								</li>
+								<li id="dresser03">
+									<p class="thumb">
+										<img src="images/item/dresser/03_01.jpg" width="180" height="180">
+									</p>
+									<h2>
+										<b>イタリア　輸入家具 飾棚　ガラスキャビネット</b>
+									</h2>
+									<p class="code">型番：<span class="codeNum">DRS-03</span></p>
+									<p class="item_info">イタリアの豪華なガラスキャビネット</p>
+									<p class="item_detail"><a href="itemdetail.html" name="images/item/dresser/03_01.jpg" onclick="setPara(this.name);">商品詳細</a></p>
+									<p class="item_price">¥ 1,850</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div>
+						<div class="jquery-ui-accordion-title"><img src="images/m_lamp.png" onclick="heightTyosei();"></div>
+						<div class="jquery-ui-accordion-contents">
+
+							<ul id="ProductList">
+								<li id="lamp01">
+									<p class="thumb">
+										<img src="images/item/lamp/01_01.jpg" width="180" height="180">
+									</p>
+									<h2>
+										<b>タバナン焼 テーブルアジアンランプ</b>
+									</h2>
+									<p class="code">型番：<span class="codeNum">LMP-01</span></p>
+									<p class="item_info">小さめサイズの置き型ランプ</p>
+									<p class="item_detail"><a href="itemdetail.html" name="images/item/lamp/01_01.jpg" onclick="setPara(this.name);">商品詳細</a></p>
+									<p class="item_price">¥ 38,500</p>
+								</li>
+
+								<li id="lamp02">
+									<p class="thumb">
+										<img src="images/item/lamp/02_01.jpg" width="180" height="180">
+									</p>
+									<h2>
+										<b>トールフロアアジアンランプ</b>
+									</h2>
+									<p class="code">型番：<span class="codeNum">LMP-02</span></p>
+									<p class="item_info">浮き出したような螺旋がアクセント</p>
+									<p class="item_detail"><a href="itemdetail.html" name="images/item/lamp/02_01.jpg" onclick="setPara(this.name);">商品詳細</a></p>
+									<p class="item_price">¥ 38,500</p>
+								</li>
+
+								<li id="lamp03">
+									<p class="thumb">
+										<img src="images/item/lamp/03_01.jpg" width="180" height="180">
+									</p>
+									<h2>
+										<b>布らせんボールアジアンランプ２</b>
+									</h2>
+									<p class="code">型番：<span class="codeNum">LMP-03</span></p>
+									<p class="item_info">らせん模様の骨組みに布張りしているランプ</p>
+									<p class="item_detail"><a href="itemdetail.html" name="images/item/lamp/03_01.jpg" onclick="setPara(this.name);">商品詳細</a></p>
+									<p class="item_price">¥ 1,850</p>
+
+								</li>
+
+								<li id="lamp04">
+									<p class="thumb">
+										<img src="images/item/lamp/04_01.jpg" width="180" height="180">
+									</p>
+									<h2>
+										<b>カピスロータスアジアンランプ</b>
+									</h2>
+									<p class="code">型番：<span class="codeNum">LMP-04</span></p>
+									<p class="item_info">蓮の花の形を模ったコンパクトなテーブルランプ</p>
+									<p class="item_detail"><a href="itemdetail.html" name="images/item/lamp/04_01.jpg" onclick="setPara(this.name);">商品詳細</a></p>
+									<p class="item_price">¥ 38,500</p>
+								</li>
+
+								<li id="lamp05">
+									<p class="thumb">
+										<img src="images/item/lamp/05_01.jpg" width="180" height="180">
+									</p>
+									<h2>
+										<b>グラスファイバージュプン</b>
+									</h2>
+									<p class="code">型番：<span class="codeNum">LMP-05</span></p>
+									<p class="item_info">製造：インドネシア(シェード)</p>
+									<p class="item_detail"><a href="itemdetail.html" name="images/item/lamp/05_01.jpg" onclick="setPara(this.name);">商品詳細</a></p>
+									<p class="item_price">¥ 38,500</p>
+								</li>
+
+								<li id="lamp06">
+									<p class="thumb">
+										<img src="images/item/lamp/06_01.jpg" width="180" height="180">
+									</p>
+									<h2>
+										<b>吊下げアジアンランプ</b>
+									</h2>
+									<p class="code">型番：<span class="codeNum">LMP-06</span></p>
+									<p class="item_info">製造：インドネシア(シェード)</p>
+									<p class="item_detail"><a href="itemdetail.html" name="images/item/lamp/06_01.jpg" onclick="setPara(this.name);">商品詳細</a></p>
+									<p class="item_price">¥ 1,850</p>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+										<!-- accordion end					 -->
+				<div id="Cart">
+					<h2><a href="cart.html"><div class="b_h_cart" onclick="setCookie();"><div class="b_cart"></div></div></a></h2>
+					<ul id="CartList">
+						
+					</ul>
+					<div class="clear_box"></div>
+				</div>
+			</div>
+
+										<!-- main end						 -->
+										<!-- nav start						 -->
+			<div class="nav">
+				<div class="nav_button">
+					<ul>
+						<li id="l_top"><a href="index.html"><div id="b_top"></div></a></li>
+						<li id="l_item"><a href="item.html"><div id="b_item"></div></a></li>
+						<li id="l_guide"><a href="guide.html"><div id="b_guide"></div></a></li>
+						<li id="l_contact"><a href="contact.html"><div id="b_contact"></div></a></li>
+					</ul>
+				</div>
+			</div>
+										<!-- nav end						 -->
+
+			<div class="clear_box"></div>
+		</div>
+										<!-- contents end					 -->
+
+										<!-- footer start					 -->
+		<div class="footer">
+			<div class="footer_bgimg">
+				<div class="footer_copy"><p>&copy; 2012 craf. All rights reserved. </p></div>
+				<div class="clear_box"></div>
+			</div>
+			
+		</div>
+										<!-- footer end						 -->
+	</body>
+
+</html>

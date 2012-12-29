@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+input .error {
+	background-color: #fcc;
+	border:solid 1px #000000;
+}
+p .error {
+	color: #FF0000;
+	margin-top: 5px;
+	font-size: 14px;
+}
+.require {
+	color: #FF0000;
+	font-weight: bold;
+	font-size: 14px;
+	padding-left: 3px;
+	width: 50px;
+	float: left;
+}
+.box_1 {
+	width: 110px;
+	float: left;
+	font-size: 14px;
+}

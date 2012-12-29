@@ -1,0 +1,13 @@
+﻿@charset "utf-8";
+.contents .main #jquery-ui-accordion {
+	margin-top: 10px;
+	margin-left: 10px;
+	padding: 0;
+}
+
+div#jquery-ui-accordion div.jquery-ui-accordion-title{
+	padding: 0;
+}
+div#jquery-ui-accordion div.jquery-ui-accordion-contents{
+	padding: 0;
+}

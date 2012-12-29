@@ -1,0 +1,93 @@
+﻿@charset "utf-8";
+
+.contents .image_carousel {
+	padding: 15px 0 15px 40px;
+	position: relative;
+	float: left;
+	height: 170px;
+	width: 960px;
+}
+
+.contents .image_carousel #carousel_box {
+	float: left;
+}
+
+.contents .image_carousel #carousel_box img {
+	border: 1px solid #ccc;
+	background-color: white;
+	padding: 9px;
+	margin: 10px;
+	display: block;
+	float: left;
+	background-image: url('../images/itembg.png');
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+
+.contents .image_carousel a.prev {
+	background: url('../images/larrow.png') no-repeat right top transparent;
+	width: 22px;
+	height: 60px;
+	display: block;
+	float: left;
+	margin-top: 60px;
+}
+
+.contents .image_carousel a.prev:hover {
+	background: url('../images/larrow.png') no-repeat left top transparent;
+	width: 22px;
+	height: 60px;
+	display: block;
+	float: left;
+	margin-top: 60px;
+}
+
+.contents .image_carousel a.next {
+	background: url('../images/rarrow.png') no-repeat left top transparent;
+	width: 22px;
+	height: 60px;
+	display: block;
+	float: left;
+	margin-top: 60px;
+}
+
+.contents .image_carousel a.next:hover {
+	background: url('../images/rarrow.png') no-repeat right top transparent;
+	width: 22px;
+	height: 60px;
+	display: block;
+	float: left;
+	margin-top: 60px;
+}
+
+
+.contents .image_carousel a.prev {
+	float: left;
+}
+.contents .image_carousel a.prev.disabled, a.next.disabled {
+	cursor: default;
+}
+
+.contents .image_carousel a.prev span, .contents .image_carousel a.next span {
+	display: none;
+}
+
+.pagination {
+	text-align: center;
+}
+
+.contents .image_carousel .pagination a {
+	background: url(../images/miscellaneous_sprite.png) 0 -300px no-repeat transparent;
+	width: 15px;
+	height: 15px;
+	margin: 0 5px 0 0;
+	display: inline-block;
+
+}
+.contents .image_carousel .pagination a.selected {
+	background-position: -25px -300px;
+	cursor: default;
+}
+.contents .image_carousel .pagination a span {
+	display: none;
+}

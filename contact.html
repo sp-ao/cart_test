@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>craf － お問い合わせ －</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/turn.css" rel="stylesheet" type="text/css" />
+		<link href="css/error.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/turn.js"></script>
+		<script type="text/javascript" src="js/introtzikas.js"></script>
+		<script type="text/javascript" src="js/jquery.pageswitch.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+
+	</head>
+
+	<body>								<!--body start						 -->
+										<!--header start					 -->
+		<div class="header">
+
+			<div class="t_logo">
+				<h1><a href="index.html"><img src="images/logo_other.png"></a></h1>
+			</div>
+
+			<div class="t_button">
+				<div class="t_cart"><a href="cart.html"></a></div>
+				<div class="t_login"><a href="login.html"></a></div>
+				<div class="t_quickjoin"><a href="#"></a></div>
+			</div>
+			<div class="clear_box"></div>
+										<!-- 画面右上エフェクト start		 -->
+			<img id="target" src="images/code.png">
+										<!-- 画面右上エフェクト end			 -->
+		</div>
+										<!-- header end						 -->
+
+
+										<!-- contents start					 -->
+		<div class="contents">
+
+			<div class="page_img">
+				<img src="images/l_contact.png">
+			</div>
+										<!-- main start						 -->
+			<div class="main">
+
+				<form action="" method="post">
+					<div class="dummy"></div>
+					<div>
+						<div class="box_1">名前（漢字）</div>
+						<div class="require">※必須</div>
+						<div class="inputarea">
+							<input id="namekanji" name="namekanji" type="text" size="40">
+						</div>
+					</div>
+					<div>
+						<div class="box_1">名前（カナ）</div>
+						<div class="require">※必須</div>
+						<div class="inputarea">
+							<input id="namekana" name="namekana" type="text" size="40">
+						</div>
+					</div>
+					<div>
+						<div class="box_1">電話番号</div>
+						<div class="require">※必須</div>
+						<div class="inputarea">
+							<input id="phonenum" name="phonenum" type="text" size="40">
+						</div>
+					</div>
+					<div>
+						<div class="box_1">E-mail</div>
+						<div class="inputarea">
+							<input id="email" name="email" type="text" size="40">
+						</div>
+					</div>
+					<div>
+						<div class="box_1">お問い合わせ内容</div>
+						<div class="require">※必須</div>
+						<div class="inputarea">
+							<textarea id="naiyo" name="naiyo" cols="50" rows="10"></textarea>
+						</div>
+					</div>
+					<div>
+						<div id="s_button_box">
+							<div id="s_button">
+								<input id="send_button" name="button" type="button" value="">
+							</div>
+						</div>
+					</div>
+				</form>
+
+			</div>						<!-- inner							 -->
+
+										<!-- main end						 -->
+										<!-- nav start						 -->
+			<div class="nav">
+				<div class="nav_button">
+					<ul>
+						<li id="l_top"><a href="index.html"><div id="b_top"></div></a></li>
+						<li id="l_item"><a href="item.html"><div id="b_item"></div></a></li>
+						<li id="l_guide"><a href="guide.html"><div id="b_guide"></div></a></li>
+						<li id="l_contact"><a href="contact.html"><div id="b_contact"></div></a></li>
+					</ul>
+				</div>
+			</div>
+										<!-- nav end						 -->
+			<div class="clear_box"></div>
+		</div>
+										<!-- contents end					 -->
+										<!-- footer start					 -->
+		<div class="footer">
+			<div class="footer_bgimg">
+				<div class="footer_copy"><p>&copy; 2012 craf. All rights reserved. </p></div>
+				<div class="clear_box"></div>
+			</div>
+			
+		</div>
+										<!-- footer end						 -->
+		<script type="text/javascript">
+			
+			var array = new Array(6);
+
+			for (var i = 1; i <= 6; i++) {
+				array[i] = 0;
+			}
+			
+			$('#s_button_box').css('display', 'none');
+
+										// 名前（漢字）
+			$('input[name=namekanji]')
+				.bind('blur', function() {
+										// 必須チェック
+					if ($(this).val() === '') {
+						$(this).addClass('error')
+							.parent()
+							.append('<p class="error">※この項目は必ずご記入ください</p>')
+							.css({
+								'color': '#FF0000',
+								'font-weight': 'bold',
+								'font-size': '12px'
+							});
+						array[1] = 0;
+					} else {
+						array[1] = 1;
+					}
+					nErrCnt = 0;
+					for (var i = 1; i < 6; i++) {
+						nErrCnt = nErrCnt + array[i];
+
+						if (nErrCnt === 5) {
+							$('#s_button_box').css('display', 'block');
+
+						} else {
+							$('#s_button_box').css('display', 'none');
+
+						}
+					}
+
+				})
+				.bind('focus', function() {
+					if ($(this).next() != false) {
+						$(this).removeClass('error')
+							.next()
+							.remove();
+					}
+				});
+
+										// 名前（カナ）
+			$('input[name=namekana]')
+				.bind('blur', function() {
+										// 必須チェック
+					if ($(this).val() === '') {
+						$(this).addClass('error')
+							.parent()
+							.append('<p class="error">※この項目は必ずご記入ください</p>')
+							.css({
+								'color': '#FF0000',
+								'font-weight': 'bold',
+								'font-size': '12px'
+							});
+						array[2] = 0;
+										// 全角カタカナチェック
+					} else if ($(this).val().match(/[^\u30A0-\u30FF]+$/)) {
+						$(this).addClass('error').parent().append('<p class="error">※この項目は全角カタカナでご記入ください</p>')
+							.css({
+								'color': '#FF0000',
+								'font-weight': 'bold',
+								'font-size': '12px'
+							});
+						array[2] = 0;
+
+					} else {
+						array[2] = 1;
+
+					}
+					nErrCnt = 0;
+
+					for (var i = 1; i < 6; i++) {
+						nErrCnt = nErrCnt + array[i];
+						if (nErrCnt === 5) {
+							$('#s_button_box').css('display', 'block');
+						} else {
+							$('#s_button_box').css('display', 'none');
+						}
+					}
+
+				})
+				.bind('focus', function() {
+					if ($(this).next() != false) {
+						$(this).removeClass('error')
+							.next()
+							.remove();
+					}
+				});
+
+										// 電話番号
+			$('input[name=phonenum]')
+				.bind('blur', function() {
+										// 必須チェック
+					if ($(this).val() === '') {
+						$(this).addClass('error')
+							.parent()
+							.append('<p class="error">※この項目は必ずご記入ください</p>')
+							.css({
+								'color': '#FF0000',
+								'font-weight': 'bold',
+								'font-size': '12px'
+							});
+						array[3] = 0;
+										// フォーマットチェック（電話番号）
+					} else if (!$(this).val().match(/^[0-9-]{6,9}$|^[0-9-]{12}$/)) {
+						$(this).addClass('error')
+							.parent()
+							.append('<p class="error">※XXXX-XXXX-XXXX（半角数字）の形式でご記入ください</p>')
+							.css({
+								'color': '#FF0000',
+								'font-weight': 'bold',
+								'font-size': '12px'
+							});
+						array[3] = 0;
+					} else {
+						array[3] = 1;
+					}
+					nErrCnt = 0;
+
+					for (var i = 1; i < 6; i++) {
+						nErrCnt = nErrCnt + array[i];
+						if (nErrCnt === 5) {
+							$('#s_button_box').css('display', 'block');
+						} else {
+							$('#s_button_box').css('display', 'none');
+						}
+					}
+
+
+				})
+				.bind('focus', function() {
+					if ($(this).next() != false) {
+						$(this).removeClass('error')
+							.next()
+							.remove();
+					}
+				});
+
+										// E-Mail
+			$('input[name=email]')
+				.bind('blur', function() {
+										// 必須チェック
+					if (($(this).val() !== '') &&
+						(!$(this).val().match(/^[A-Za-z0-9]+[\w-]+@[\w\.-]+\.\w{2,}$/))) {
+						$(this).addClass('error')
+							.parent()
+							.append('<p class="error">※半角英数字を使用し、xxx@xxx.xxの形式で入力してください</p>')
+							.css({
+								'color': '#FF0000',
+								'font-weight': 'bold',
+								'font-size': '12px'
+							});
+						array[4] = 0;
+					} else {
+						array[4] = 1;
+					}
+					nErrCnt = 0;
+
+					for (var i = 1; i < 6; i++) {
+						nErrCnt = nErrCnt + array[i];
+						if (nErrCnt === 5) {
+							$('#s_button_box').css('display', 'block');
+						} else {
+							$('#s_button_box').css('display', 'none');
+						}
+					}
+
+				})
+				.bind('focus', function() {
+					if ($(this).next() != false) {
+						$(this).removeClass('error')
+							.next()
+							.remove();
+					}
+				});
+
+										// 問い合わせ内容
+			$('textarea[name=naiyo]')
+				.bind('blur', function() {
+										// 必須チェック
+					if ($(this).val() === '') {
+						$(this).addClass('error')
+							.parent()
+							.append('<p class="error">※この項目は必ずご記入ください</p>')
+							.css({
+								'color': '#FF0000',
+								'font-weight': 'bold',
+								'font-size': '12px'
+							});
+						array[5] = 0;
+					} else {
+						array[5] = 1;
+					}
+					nErrCnt = 0;
+
+					for (var i = 1; i < 6; i++) {
+						nErrCnt = nErrCnt + array[i];
+						if (nErrCnt === 5) {
+							$('#s_button_box').css('display', 'block');
+						} else {
+							$('#s_button_box').css('display', 'none');
+						}
+					}
+
+				})
+				.bind('focus', function() {
+					if ($(this).next() != false) {
+						$(this).removeClass('error')
+							.next()
+							.remove();
+					}
+				});
+		</script>
+	</body>								<!-- body end						 -->
+
+</html>
